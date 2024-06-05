@@ -1,0 +1,92 @@
+.App {
+    text-align: center;
+    height: 100vh;
+}
+
+.Container {
+    background: radial-gradient(circle, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, .5));
+    background-color: #301934;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Header {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 70px;
+    width: 100%;
+}
+
+.Nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 50%;
+}
+
+.Terminal {
+    opacity: .6;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.Button {
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 300;
+    color: rgb(230,230,230);
+    border: none;
+    cursor: pointer;
+}
+
+.Button:hover {
+    color: rgb(210,210,210);
+}
+
+.Contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(150,150,150);
+    width: 150px;
+    height: 35px;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 300;
+    background-color: rgb(10,10,10);
+    border-radius: 10px;
+    color: rgb(230,230,230);
+    cursor: pointer;
+}
+
+.Contact:hover {
+    color: rgb(210,210,210);
+}
+
+.Space {
+    height: 100%;
+    width: 25%;
+}
+
+.Try {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 25%;
+}
+
+.Img {
+    opacity: .3;
+    width: 80%;
+    object-fit: cover;
+}
+
+.Spacer {
+    height: 70px;
+}
