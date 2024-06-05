@@ -29,7 +29,7 @@ function App() {
             </div>
             <img src="/static/media/matrix.png" className="Matrix"></img>
             <button className="ImgButton"> Try Now </button>
-            <TerminalView img="" text=""/>
+            <TerminalView img="" text="" bool={true}/>
         </div>
     </div>
   );
