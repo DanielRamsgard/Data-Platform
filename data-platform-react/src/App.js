@@ -1,5 +1,6 @@
 import './App.css';
 import React from 'react';
+import TerminalView from './components/TerminalView';
 
 function App() {
   return (
@@ -15,13 +16,20 @@ function App() {
                     <button className="Button"> LU </button>
                 </div>
                 <div className="Space"></div>
-                <div className="Try">
+                <div className="Info">
                     <button className="Button"> About </button>
                     <button className="Contact"> Contact </button>
                 </div>
             </div>
-            <img src="/static/media/background.png" className="Img"></img>
-            <div className="Spacer"></div>
+            <div className="ImgContainer">
+                <img src="/static/media/background.png" className="Img"></img>
+                <div className="Text"> Data Analysis </div>
+                <div className="TextTwo"> Platform </div>
+                <div className="TextThree"> Linear Algebra </div>
+            </div>
+            <img src="/static/media/matrix.png" className="Matrix"></img>
+            <button className="ImgButton"> Try Now </button>
+            <TerminalView></TerminalView>
         </div>
     </div>
   );
