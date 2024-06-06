@@ -1,0 +1,24 @@
+.CustomColor {
+    background-color: rgba(36, 42, 55, 255);
+}
+
+
+.CustomButton {
+    text-align: center;
+    opacity: 1;
+    border-radius: 450px;
+    height: 45px;
+    width: 150px;
+    border-style: solid;
+    font-weight: bolder;
+    cursor: pointer;
+    color: rgb(230,230,230);
+    border: 2px solid #7BAFD4;
+    background-color: rgba(36, 42, 55, 255);
+}
+
+.CustomButton:hover{
+    color: rgb(210,210,210);
+    border: 2px solid #7BAFD4;
+    background-color: rgba(36, 42, 55, 255);
+}

@@ -26,8 +26,8 @@ function App() {
             </div>
             <div className="ImgContainer">
                 <img src="/static/media/backgroundText.png" className="Img"></img>
-                <button className="ImgButton"> Try Now </button>
             </div>
+            <button className="ImgButton"> Try Now </button>
             <div className="Spacer"></div>
             <TerminalView img="" text="" bool={true}/>
             <TerminalView img="" text="" bool={false}/>

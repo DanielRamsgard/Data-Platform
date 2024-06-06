@@ -16,7 +16,7 @@
 }
 
 .ImageSide {
-    background-color: rgba(36, 42, 55, 255);
+    background-color: rgb(17 24 39);
     width: 705px;
     height: inherit;
 }
@@ -28,7 +28,7 @@
 }
 
 .TextSide {
-    background-color: rgba(36, 42, 55, 255);
+    background-color: rgb(17 24 39);
     width: 705px;
     height: inherit;
 }
