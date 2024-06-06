@@ -2,11 +2,33 @@
 .TopSpace {
     height: 10px;
     width: 1440px;
-    background-color: white;
+    background-color: rgba(36, 42, 55, 255);
 }
 
 .TerminalView {
-    height: 1000px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
     width: 1440px;
     background-color: black;
+}
+
+.ImageSide {
+    background-color: #7BAFD4;
+    width: 715px;
+    height: inherit;
+}
+
+.Middle {
+    width: 10px;
+    height: inherit;
+    background-color: rgba(36, 42, 55, 255);
+}
+
+.TextSide {
+    background-color: #7BAFD4;
+    width: 715px;
+    height: inherit;
 }

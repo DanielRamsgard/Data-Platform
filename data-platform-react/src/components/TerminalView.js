@@ -8,12 +8,9 @@ const TerminalView = (props) => {
                 <div className="TopSpace">
                 </div>
                 <div className="TerminalView">
-                    <div className="ImageSide">
-
-                    </div>
-                    <div className="TextSide">
-
-                    </div>
+                    <div className="ImageSide"></div>
+                    <div className="Middle"></div>
+                    <div className="TextSide"></div>
                 </div>
             </div>
         );
@@ -23,12 +20,9 @@ const TerminalView = (props) => {
                 <div className="TopSpace">
                 </div>
                 <div className="TerminalView">
-                    <div className="TextSide">
-
-                    </div>
-                    <div className="ImageSide">
-
-                    </div>
+                    <div className="TextSide"></div>
+                    <div className="Middle"></div>
+                    <div className="ImageSide"></div>
                 </div>
             </div>
         );

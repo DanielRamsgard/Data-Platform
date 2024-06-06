@@ -3,7 +3,8 @@ import React from 'react';
 import TerminalView from './components/TerminalView';
 
 function App() {
-  return (
+
+    return (
     <div className="App">
         <div className="Container">
             <div className="Header">
@@ -23,13 +24,17 @@ function App() {
             </div>
             <div className="ImgContainer">
                 <img src="/static/media/backgroundText.png" className="Img"></img>
-                <button className="ImgButton"> Try Now </button>
+                <div className="FirstText"> Data Analysis </div>
+                <div className="SecondText"> Platform </div>
+                <div className="ThirdText"> Linear Algebra </div>
+                
             </div>
             <div className="Spacer"></div>
             <TerminalView img="" text="" bool={true}/>
+            <TerminalView img="" text="" bool={false}/>
         </div>
     </div>
-  );
+    );
 }
 
 export default App;

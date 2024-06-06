@@ -5,7 +5,7 @@
 
 .Container {
     background: radial-gradient(circle, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, .5));
-    background-color: #301934;
+    background-color: #7BAFD4;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -29,7 +29,7 @@
 }
 
 .Terminal {
-    opacity: .6;
+    opacity: 1;
     width: 50px;
     height: 50px;
     object-fit: cover;
@@ -58,7 +58,7 @@
     background-color: transparent;
     font-size: 15px;
     font-weight: 300;
-    background-color: rgb(10,10,10);
+    background-color: rgba(36, 42, 55, 255);
     border-radius: 10px;
     color: rgb(230,230,230);
     cursor: pointer;
@@ -112,18 +112,49 @@
     font-weight: bolder;
     font-size: 17px;
     cursor: pointer;
-    background-color: #301934;
-    border: 2px solid rgba(255,255,255, .8);
-    color: white;
+    color: rgb(230,230,230);
+    border: 2px solid #7BAFD4;
+    background-color: rgba(36, 42, 55, 255);
 }
 
 .ImgButton:hover{
-    color: black;
-    border: 2px solid rgba(0,0, 0, 1);
-    background-color: white;
+    color: rgb(210,210,210);
+    border: 2px solid #7BAFD4;
+    background-color: rgba(36, 42, 55, 255);
 }
 
 .Spacer {
     height: 70px;
     width: inherit;
+}
+
+.FirstText {
+    text-shadow: 2px 2px 4px black;
+    top: 21%;
+    left: 58%;
+    position: absolute;
+    font-size: 70px;
+    font-weight: bolder;
+    color: rgb(230,230,230);
+}
+
+.SecondText {
+    text-shadow: 2px 2px 4px black;
+    top: 32%;
+    left: 69.4%;
+    position: absolute;
+    font-size: 70px;
+    font-weight: bolder;
+    color: rgb(230,230,230);
+}
+
+.ThirdText {
+    text-shadow: 2px 2px 4px black;
+    font-style: italic;
+    top: 43%;
+    left: 56.2%;
+    position: absolute;
+    font-size: 70px;
+    font-weight: bolder;
+    color: rgb(230,230,230);
 }
