@@ -4,14 +4,32 @@ import './TerminalView.css';
 const TerminalView = (props) => {
     if (props.bool){
         return (
-            <div className="TerminalView">
-                
+            <div>
+                <div className="TopSpace">
+                </div>
+                <div className="TerminalView">
+                    <div className="ImageSide">
+
+                    </div>
+                    <div className="TextSide">
+
+                    </div>
+                </div>
             </div>
         );
     } else {
         return (
-            <div className="TerminalView">
-                
+            <div>
+                <div className="TopSpace">
+                </div>
+                <div className="TerminalView">
+                    <div className="TextSide">
+
+                    </div>
+                    <div className="ImageSide">
+
+                    </div>
+                </div>
             </div>
         );
     }

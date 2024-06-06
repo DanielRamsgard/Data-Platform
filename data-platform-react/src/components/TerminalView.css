@@ -1,6 +1,12 @@
-.TerminalView {
+
+.TopSpace {
     height: 10px;
     width: 1440px;
-    background-color: teal;
+    background-color: white;
+}
 
+.TerminalView {
+    height: 1000px;
+    width: 1440px;
+    background-color: black;
 }
