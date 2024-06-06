@@ -1,0 +1,28 @@
+.Bar {
+    height: 10px;
+    width: 1440px;
+    background-color: #7BAFD4;
+}
+
+.WideView{
+    object-fit: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 1440px;
+    background-color: black;
+}    
+
+.Image {
+    border:none;
+    width: 50%;
+    height: inherit;
+}
+
+.Text {
+    border:none;
+    width: 715px;
+    height: inherit;
+}

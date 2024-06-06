@@ -1,6 +1,8 @@
 import './App.css';
 import React from 'react';
 import TerminalView from './components/TerminalView';
+import WideView from './components/WideView';
+import ContactView from './components/ContactView';
 
 function App() {
 
@@ -24,14 +26,17 @@ function App() {
             </div>
             <div className="ImgContainer">
                 <img src="/static/media/backgroundText.png" className="Img"></img>
-                <div className="FirstText"> Data Analysis </div>
-                <div className="SecondText"> Platform </div>
-                <div className="ThirdText"> Linear Algebra </div>
-                
+                <button className="ImgButton"> Try Now </button>
             </div>
             <div className="Spacer"></div>
             <TerminalView img="" text="" bool={true}/>
             <TerminalView img="" text="" bool={false}/>
+            <WideView img="/static/media/banner.png" text=""/>
+            <TerminalView img="" text="" bool={true}/>
+            <TerminalView img="" text="" bool={false}/>
+            <WideView img="/static/media/bannerOne.jpeg" text=""/>
+            <div className="TopSpace"></div>
+            <ContactView/>
         </div>
     </div>
     );

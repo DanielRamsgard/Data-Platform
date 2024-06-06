@@ -2,7 +2,7 @@
 .TopSpace {
     height: 10px;
     width: 1440px;
-    background-color: rgba(36, 42, 55, 255);
+    background-color: #7BAFD4;
 }
 
 .TerminalView {
@@ -10,25 +10,25 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 600px;
+    height: 400px;
     width: 1440px;
-    background-color: black;
+    background-color: white;
 }
 
 .ImageSide {
-    background-color: #7BAFD4;
-    width: 715px;
+    background-color: rgba(36, 42, 55, 255);
+    width: 705px;
     height: inherit;
 }
 
 .Middle {
     width: 10px;
     height: inherit;
-    background-color: rgba(36, 42, 55, 255);
+    background-color: #7BAFD4;
 }
 
 .TextSide {
-    background-color: #7BAFD4;
-    width: 715px;
+    background-color: rgba(36, 42, 55, 255);
+    width: 705px;
     height: inherit;
 }

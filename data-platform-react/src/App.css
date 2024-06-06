@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .App {
     text-align: center;
     height: 100vh;
@@ -126,35 +130,4 @@
 .Spacer {
     height: 70px;
     width: inherit;
-}
-
-.FirstText {
-    text-shadow: 2px 2px 4px black;
-    top: 21%;
-    left: 58%;
-    position: absolute;
-    font-size: 70px;
-    font-weight: bolder;
-    color: rgb(230,230,230);
-}
-
-.SecondText {
-    text-shadow: 2px 2px 4px black;
-    top: 32%;
-    left: 69.4%;
-    position: absolute;
-    font-size: 70px;
-    font-weight: bolder;
-    color: rgb(230,230,230);
-}
-
-.ThirdText {
-    text-shadow: 2px 2px 4px black;
-    font-style: italic;
-    top: 43%;
-    left: 56.2%;
-    position: absolute;
-    font-size: 70px;
-    font-weight: bolder;
-    color: rgb(230,230,230);
 }
