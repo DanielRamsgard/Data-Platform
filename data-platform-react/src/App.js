@@ -22,13 +22,10 @@ function App() {
                 </div>
             </div>
             <div className="ImgContainer">
-                <img src="/static/media/background.png" className="Img"></img>
-                <div className="Text"> Data Analysis </div>
-                <div className="TextTwo"> Platform </div>
-                <div className="TextThree"> Linear Algebra </div>
+                <img src="/static/media/backgroundText.png" className="Img"></img>
+                <button className="ImgButton"> Try Now </button>
             </div>
-            <img src="/static/media/matrix.png" className="Matrix"></img>
-            <button className="ImgButton"> Try Now </button>
+            <div className="Spacer"></div>
             <TerminalView img="" text="" bool={true}/>
         </div>
     </div>

@@ -82,61 +82,28 @@
 }
 
 .ImgContainer {
-    display: block;
+    display: relative;
 }
 
 .Img {
-    opacity: .55;
+    opacity: 1;
     width: 80%;
     object-fit: cover;
 }
 
-.Text {
-    width: 85%;
-    text-shadow: 2px 2px 4px rgba(106,0, 230, .6);
-    font-weight: bolder;
-    font-size: 80px;
-    text-align: right;
-    position: absolute;
-    transform: translate(0px,  -550px);
-    color: rgb(230,230,230);
-}
-
-.TextTwo {
-    width: 85%;
-
-    text-shadow: 2px 2px 4px rgba(106,0, 230, .6);
-    font-weight: bolder;
-    font-size: 80px;
-    text-align: right;
-    position: absolute;
-    transform: translate(0px,  -450px);
-    color: rgb(230,230,230);
-}
-
-.TextThree {
-    width: 85%;
-    text-shadow: 2px 2px 4px rgba(106,0, 230, .6);
-    font-style: italic;
-    font-weight: bolder;
-    font-size: 80px;
-    text-align: right;
-    position: absolute;
-    transform: translate(0px,  -350px);
-    color: rgb(230,230,230);
-}
-
 .Matrix {
     transform: translate(239px,  -250px);
-    opacity: .5;
+    opacity: 1;
     height: 10%;
     width: 10%;
     object-fit: cover;
 }
 
 .ImgButton {
+    position: absolute;
+    top: 67%;
+    left: 74.5%;
     text-align: center;
-    transform: translate(429px,  -347px);
     opacity: 1;
     border-radius: 450px;
     height: 45px;
@@ -154,4 +121,9 @@
     color: black;
     border: 2px solid rgba(0,0, 0, 1);
     background-color: white;
+}
+
+.Spacer {
+    height: 70px;
+    width: inherit;
 }
