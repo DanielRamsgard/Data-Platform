@@ -23,12 +23,13 @@ function App() {
             </div>
             <button className="ImgButton"> Try Now </button>
             <div className="Spacer"></div>
-            <TerminalView img="" text="" bool={true}/>
-            <TerminalView img="" text="" bool={false}/>
+            <TerminalView img="" text="" bool={true} id="GaussianElim"/>
+            <TerminalView img="" text="" bool={false} id="Eigenvalues"/>
             <WideView img="/static/media/banner.png" text=""/>
-            <TerminalView img="" text="" bool={true}/>
-            <TerminalView img="" text="" bool={false}/>
+            <TerminalView img="" text="" bool={true} id="SVD"/>
+            <TerminalView img="" text="" bool={false} id="Gram-Schmidt"/>
             <WideView img="/static/media/bannerOne.jpeg" text=""/>
+            <TerminalView img="" text="" bool={false} id="LU"/>
             <div className="TopSpace"></div>
             <ContactView/>
         </div>

@@ -5,7 +5,7 @@ const TerminalView = (props) => {
     if (props.bool){
         return (
             <div>
-                <div className="TopSpace">
+                <div className="TopSpace" id={props.id}>
                 </div>
                 <div className="TerminalView">
                     <div className="Middle"></div>
@@ -19,7 +19,7 @@ const TerminalView = (props) => {
     } else {
         return (
             <div>
-                <div className="TopSpace">
+                <div className="TopSpace" id={props.id}>
                 </div>
                 <div className="TerminalView">
                     <div className="Middle"></div>
