@@ -27,7 +27,7 @@ function App() {
             <TerminalView alt="Eigenvalue Diagonalization" img="/static/media/eigenvaluesBlue.png" text="Eigenvalue Diagonalization" bool={false} id="Eigenvalues"/>
             <WideView/>
             <TerminalView alt="Singular Value Decomposition" img="/static/media/svdBlue.png" text="Singular Value Decomposition" bool={true} id="SVD"/>
-            <TerminalView alt="QR Factorization" mg="/static/media/qrBlue.png" text="QR Factorization" bool={false} id="Gram-Schmidt"/>
+            <TerminalView alt="QR Factorization" img="/static/media/qrBlue.png" text="QR Factorization" bool={false} id="Gram-Schmidt"/>
             <WideView/>
             <TerminalView alt="LU Decomposition" img="/static/media/luBlue.png" text="LU Decomposition" bool={true} id="LU"/>
             <div className="TopSpace"></div>
