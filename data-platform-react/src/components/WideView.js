@@ -5,7 +5,7 @@ const WideView = (props) => {
     return (
         <div>
             <div className="Bar"></div>
-            <img src={props.img} className="WideView"></img>
+            <div className="WideView"></div>
         </div>
     );
 };

@@ -21,15 +21,15 @@ function App() {
             <div className="ImgContainer">
                 <img src="/static/media/backgroundText.png" className="Img"></img>
             </div>
-            <button className="ImgButton" onClick={ () => {window.location.href='#GaussianElim'}}> Try Now </button>
+            <button className="ImgButton" onClick={() => {window.location.href='#GaussianElim'}}> Try Now </button>
             <div className="Spacer"></div>
-            <TerminalView img="/static/media/gaussElim.png" bool={true} id="GaussianElim"/>
-            <TerminalView img="/static/media/eigenvalues.png" bool={false} id="Eigenvalues"/>
-            <WideView img="/static/media/banner.png"/>
-            <TerminalView img="/static/media/svd.jpg" bool={true} id="SVD"/>
-            <TerminalView img="/static/media/qr.png" bool={false} id="Gram-Schmidt"/>
-            <WideView img="/static/media/bannerOne.jpeg"/>
-            <TerminalView img="/static/media/lu.png" bool={true} id="LU"/>
+            <TerminalView img="/static/media/gaussElimBlue.png" text="Row Reduced Echelon Form" bool={true} id="GaussianElim"/>
+            <TerminalView img="/static/media/eigenvaluesBlue.png" text="Eigenvalue Diagonalization" bool={false} id="Eigenvalues"/>
+            <WideView/>
+            <TerminalView img="/static/media/svdBlue.png" text="Singular Value Decomposition" bool={true} id="SVD"/>
+            <TerminalView img="/static/media/qrBlue.png" text="QR Factorization" bool={false} id="Gram-Schmidt"/>
+            <WideView/>
+            <TerminalView img="/static/media/luBlue.png" text="LU Decomposition" bool={true} id="LU"/>
             <div className="TopSpace"></div>
             <ContactView/>
         </div>
