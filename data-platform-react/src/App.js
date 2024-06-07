@@ -21,15 +21,15 @@ function App() {
             <div className="ImgContainer">
                 <img src="/static/media/backgroundText.png" className="Img"></img>
             </div>
-            <button className="ImgButton"> Try Now </button>
+            <button className="ImgButton" onClick={ () => {window.location.href='#GaussianElim'}}> Try Now </button>
             <div className="Spacer"></div>
-            <TerminalView img="" text="" bool={true} id="GaussianElim"/>
-            <TerminalView img="" text="" bool={false} id="Eigenvalues"/>
-            <WideView img="/static/media/banner.png" text=""/>
-            <TerminalView img="" text="" bool={true} id="SVD"/>
-            <TerminalView img="" text="" bool={false} id="Gram-Schmidt"/>
-            <WideView img="/static/media/bannerOne.jpeg" text=""/>
-            <TerminalView img="" text="" bool={false} id="LU"/>
+            <TerminalView img="/static/media/gaussElim.png" bool={true} id="GaussianElim"/>
+            <TerminalView img="/static/media/eigenvalues.png" bool={false} id="Eigenvalues"/>
+            <WideView img="/static/media/banner.png"/>
+            <TerminalView img="/static/media/svd.jpg" bool={true} id="SVD"/>
+            <TerminalView img="/static/media/qr.png" bool={false} id="Gram-Schmidt"/>
+            <WideView img="/static/media/bannerOne.jpeg"/>
+            <TerminalView img="/static/media/lu.png" bool={true} id="LU"/>
             <div className="TopSpace"></div>
             <ContactView/>
         </div>

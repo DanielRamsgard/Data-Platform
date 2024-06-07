@@ -9,7 +9,7 @@ const TerminalView = (props) => {
                 </div>
                 <div className="TerminalView">
                     <div className="Middle"></div>
-                    <div className="ImageSide"></div>
+                    <img className="ImageSide" src={props.img}></img>
                     <div className="Middle"></div>
                     <div className="TextSide"></div>
                     <div className="Middle"></div>
@@ -25,7 +25,7 @@ const TerminalView = (props) => {
                     <div className="Middle"></div>
                     <div className="TextSide"></div>
                     <div className="Middle"></div>
-                    <div className="ImageSide"></div>
+                    <img className="ImageSide" src={props.img}></img>
                     <div className="Middle"></div>
                 </div>
             </div>

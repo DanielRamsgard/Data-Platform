@@ -16,6 +16,7 @@
 }
 
 .ImageSide {
+    object-fit: cover;
     background-color: rgb(17 24 39);
     width: 705px;
     height: inherit;
