@@ -14,8 +14,8 @@ function App() {
                 <NavBar />
                 <div className="Space"></div>
                 <div className="Info">
-                    <button className="Button"> About </button>
-                    <button className="Contact"> Contact </button>
+                    <a className="Button" href="https://github.com/DanielRamsgard/Data-Platform#readme" target="_blank"> About </a>
+                    <button className="Contact" onClick={ () => {window.location.href='#Contact'}}> Contact </button>
                 </div>
             </div>
             <div className="ImgContainer">
