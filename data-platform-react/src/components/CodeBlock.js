@@ -3,14 +3,22 @@ import React, { useState } from 'react';
 const checkMark = 'M7.629 14.71L3.354 10.435a1 1 0 1 0-1.415 1.414l5.29 5.29a1 1 0 0 0 1.415 0l10-10a1 1 0 0 0-1.415-1.415l-9.6 9.6z';
 const clipBoard = 'M16 1h-3.278A1.992 1.992 0 0 0 11 0H7a1.993 1.993 0 0 0-1.722 1H2a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Zm-3 14H5a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2Zm0-4H5a1 1 0 0 1 0-2h8a1 1 0 1 1 0 2Zm0-5H5a1 1 0 0 1 0-2h2V2h4v2h2a1 1 0 1 1 0 2Z';
 
-const CodeBlock = () => {
+const CodeBlock = (props) => {
     const [value, setValue] = useState(clipBoard);
 
     const handlePress = () => {
+        const codeBlock = document.getElementById('code-block');
+        const text = codeBlock.textContent;
+
         setValue(checkMark);
         setTimeout(() => {
             setValue(clipBoard);
         }, 2000);
+        
+        navigator.clipboard.writeText(text).then(() => {
+        }).catch(err => {
+            console.error('Failed to copy text: ', err);
+        });
     }
 
     return (
@@ -18,7 +26,7 @@ const CodeBlock = () => {
             <div class="relative bg-gray-50 rounded-lg dark:bg-gray-700 p-4 h-64">
                 <div class="overflow-scroll max-h-full">
                     <pre><code id="code-block" class="text-sm text-gray-500 dark:text-gray-400 whitespace-pre">
-                        
+                        {props.input}
                     </code></pre>
                 </div>
             <div class="absolute top-2 end-2 bg-gray-50 dark:bg-gray-700">

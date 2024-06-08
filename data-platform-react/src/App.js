@@ -23,13 +23,13 @@ function App() {
             </div>
             <button className="ImgButton" onClick={() => {window.location.href='#GaussianElim'}}> Try Now </button>
             <div className="Spacer"></div>
-            <TerminalView alt="Row Reduced Echelon Form" img="/static/media/gaussElimBlue.png" text="Row Reduced Echelon Form" bool={false} id="GaussianElim"/>
-            <TerminalView alt="Eigenvalue Diagonalization" img="/static/media/eigenvaluesBlue.png" text="Eigenvalue Diagonalization" bool={false} id="Eigenvalues"/>
+            <TerminalView input="" alt="Row Reduced Echelon Form" img="/static/media/gaussElimBlue.png" text="Row Reduced Echelon Form" bool={false} id="GaussianElim"/>
+            <TerminalView input="" alt="Eigenvalue Diagonalization" img="/static/media/eigenvaluesBlue.png" text="Eigenvalue Diagonalization" bool={false} id="Eigenvalues"/>
             <WideView/>
-            <TerminalView alt="Singular Value Decomposition" img="/static/media/svdBlue.png" text="Singular Value Decomposition" bool={false} id="SVD"/>
-            <TerminalView alt="QR Factorization" img="/static/media/qrBlue.png" text="QR Factorization" bool={false} id="Gram-Schmidt"/>
+            <TerminalView input="" alt="Singular Value Decomposition" img="/static/media/svdBlue.png" text="Singular Value Decomposition" bool={false} id="SVD"/>
+            <TerminalView input="" alt="QR Factorization" img="/static/media/qrBlue.png" text="QR Factorization" bool={false} id="Gram-Schmidt"/>
             <WideView/>
-            <TerminalView alt="LU Decomposition" img="/static/media/luBlue.png" text="LU Decomposition" bool={false} id="LU"/>
+            <TerminalView input="" alt="LU Decomposition" img="/static/media/luBlue.png" text="LU Decomposition" bool={false} id="LU"/>
             <div className="TopSpace"></div>
             <ContactView/>
         </div>
