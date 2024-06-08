@@ -5,14 +5,17 @@ const clipBoard = 'M16 1h-3.278A1.992 1.992 0 0 0 11 0H7a1.993 1.993 0 0 0-1.722
 
 const CodeBlock = (props) => {
     const [value, setValue] = useState(clipBoard);
+    const [copy, setCopy] = useState(false);
 
     const handlePress = () => {
         const codeBlock = document.getElementById('code-block');
         const text = codeBlock.textContent;
-
+        setCopy(true);
         setValue(checkMark);
+        
         setTimeout(() => {
             setValue(clipBoard);
+            setCopy(false);
         }, 2000);
         
         navigator.clipboard.writeText(text).then(() => {
@@ -29,19 +32,19 @@ const CodeBlock = (props) => {
                         {props.input}
                         {/* have a string value then if statemets fir whcih text block use <br/> for newlines */}
                         This is some text.<br/>
-        This text is on a new line.<br/>
-        Here is another line of text.<br/>
-        Yet another line to test scrolling.<br/>
-        Add as many lines as you need to test the scrollability.<br/>
-        More text to ensure the div overflows and becomes scrollable.<br/>
-        Another new line.<br/>
-        <br/>
-        Here is another line of text.<br/>
-        Yet another line to test scrolling.<br/>
-        Add as many lines as you need to test the scrollability.<br/>
-        More text to ensure the div overflows and becomes scrollable.<br/>
-        Another new line.<br/>
-        This should be enough text to make the div scrollable vertically.
+                        This text is on a new line.<br/>
+                        Here is another line of text.<br/>
+                        Yet another line to test scrolling.<br/>
+                        Add as many lines as you need to test the scrollability.<br/>
+                        More text to ensure the div overflows and becomes scrollable.<br/>
+                        Another new line.<br/>
+                        <br/>
+                        Here is another line of text.<br/>
+                        Yet another line to test scrolling.<br/>
+                        Add as many lines as you need to test the scrollability.<br/>
+                        More text to ensure the div overflows and becomes scrollable.<br/>
+                        Another new line.<br/>
+                        This should be enough text to make the div scrollable vertically.
                     </code></pre>
                 </div>
             <div className="absolute top-2 end-2 bg-gray-50 dark:bg-gray-700">
@@ -50,7 +53,15 @@ const CodeBlock = (props) => {
                         <svg className="w-3 h-3 me-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
                             <path d={value}/>
                         </svg>
-                        <span className="text-xs font-semibold">Copy Shell</span>
+                        <span className="text-xs font-semibold">
+                        {(() => {
+                                    if (copy) {
+                                        return "Copied Shell!";
+                                    } else {
+                                        return "Copy Shell";
+                                    }
+                                })()}
+                        </span>
                     </span>
                     <span id="success-message" className="hidden inline-flex items-center">
                         <svg className="w-3 h-3 text-blue-700 dark:text-blue-500 me-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
