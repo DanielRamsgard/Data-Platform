@@ -23,7 +23,7 @@ function App() {
             </div>
             <button className="ImgButton" onClick={() => {window.location.href='#GaussianElim'}}> Try Now </button>
             <div className="Spacer"></div>
-            <TerminalView input="" alt="Row Reduced Echelon Form" img="/static/media/gaussElimBlue.png" text="Row Reduced Echelon Form" bool={false} id="GaussianElim"/>
+            <TerminalView input="hello" alt="Row Reduced Echelon Form" img="/static/media/gaussElimBlue.png" text="Row Reduced Echelon Form" bool={false} id="GaussianElim"/>
             <TerminalView input="" alt="Eigenvalue Diagonalization" img="/static/media/eigenvaluesBlue.png" text="Eigenvalue Diagonalization" bool={false} id="Eigenvalues"/>
             <WideView/>
             <TerminalView input="" alt="Singular Value Decomposition" img="/static/media/svdBlue.png" text="Singular Value Decomposition" bool={false} id="SVD"/>

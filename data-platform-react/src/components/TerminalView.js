@@ -13,7 +13,7 @@ const TerminalView = (props) => {
                     <img alt={props.alt} className="ImageSide" src={props.img}></img>
                     <div className="Middle"></div>
                     <div className="TextSide">
-                        <div class="font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl"> {props.text} </div>
+                        <div className="font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl"> {props.text} </div>
                         <div className="MoreSpace"></div>
                         <CodeBlock input={props.input} />
                     </div>
@@ -29,7 +29,7 @@ const TerminalView = (props) => {
                 <div className="TerminalView">
                     <div className="Middle"></div>
                     <div className="TextSide">
-                        <div class="font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl"> {props.text} </div>
+                        <div className="font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl"> {props.text} </div>
                         <div className="MoreSpace"></div>
                         <CodeBlock input={props.input}/>
                     </div>   
