@@ -30,21 +30,6 @@ const CodeBlock = (props) => {
                 <div className="overflow-scroll max-h-full">
                     <pre><code id="code-block" className="text-sm text-gray-500 dark:text-gray-400 whitespace-pre">
                         {props.input}
-                        {/* have a string value then if statemets fir whcih text block use <br/> for newlines */}
-                        This is some text.<br/>
-                        This text is on a new line.<br/>
-                        Here is another line of text.<br/>
-                        Yet another line to test scrolling.<br/>
-                        Add as many lines as you need to test the scrollability.<br/>
-                        More text to ensure the div overflows and becomes scrollable.<br/>
-                        Another new line.<br/>
-                        <br/>
-                        Here is another line of text.<br/>
-                        Yet another line to test scrolling.<br/>
-                        Add as many lines as you need to test the scrollability.<br/>
-                        More text to ensure the div overflows and becomes scrollable.<br/>
-                        Another new line.<br/>
-                        This should be enough text to make the div scrollable vertically.
                     </code></pre>
                 </div>
             <div className="absolute top-2 end-2 bg-gray-50 dark:bg-gray-700">
